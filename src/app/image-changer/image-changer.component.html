@@ -1,12 +1,17 @@
 
 <!--When the user selects a file, the handleFiles() function gets called with a FileList object containing File objects representing the files selected by the user.-->
-  <input type="file" id="input" multiple>
+  <input type="file" id="input" onChange="onClickYo" multiple>
   
   <div id="fileList">
     
 
   </div>
-<div class="container">
+  <button onclick="changeColor('blue')">blue</button>
+  <button onclick="changeColor('red')">red</button>
+  <button onclick="changeColor('black')">black</button>
+  <button onclick="changeColor('white')">white</button>
+  
   <img id="img"/>
   <p id="step2"></p>
-</div>
+  <img id="backgroundColor"/>
+

@@ -5,3 +5,11 @@
     background: black;
     position: absolute;
   }
+  .background{
+    height:500px;
+      width:500px;
+      display:inLine;
+      margin-Right:-500px;
+      Float:left;
+      display:inLine;
+  }

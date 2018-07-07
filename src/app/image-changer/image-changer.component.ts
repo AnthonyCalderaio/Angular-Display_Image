@@ -38,29 +38,43 @@ export class ImageChangerComponent implements OnInit {
         //Creating Level 1 Document Object
         var img = document.createElement("img");
       img.src = URL.createObjectURL(file);
-      //document.getElementById("img").style.borderRadius = 50%;
-      //img.style.borderRadius = 50%;
-      //var theImage = document.body.appendChild(img);
+
+     
+      
       var theImage = document.body.appendChild(img);
       String(theImage.style.borderRadius="50%");
-      String(theImage.style.height="500px");
-      String(theImage.style.width="500px");
+      String(theImage.style.height="499px");
+      String(theImage.style.width="499px");
       String(theImage.style.background="black");
       String(theImage.style.position="relative");
-
+      String(theImage.style.display="inLine");
+      String(theImage.style.marginLeft="-4px");
+      
 
       
-     // String(theImage.style.maxHeight="300px");
-      //String(theImage.style.maxWidth="300x");
-      //String(theImage.style.width="100%");
-      //String(theImage.style.paddingBottom="100%");
-      //String(theImage.style.height="100px");
-      //String(theImage.style.background="white"); 
+      // var file = new file("");
       
-      //height: auto; 
-   // width: auto; 
-    //max-width: 300px; 
-    //max-height: 300px;
+      var file = this.files[1];
+       var backgroundColor = document.createElement("img");
+       backgroundColor.src = URL.createObjectURL(file);
+       //backgroundColor.src = "black.jpg";
+       var backgroundColor = document.body.appendChild(backgroundColor);
+      // String(backgroundColor.style.height="500px");
+      // String(backgroundColor.style.width="500px");
+      // String(backgroundColor.style.display="inLine");
+      // String(backgroundColor.style.marginRight="-500px");
+      // String(backgroundColor.style.cssFloat="left");
+      // String(backgroundColor.style.display="inLine");
+      backgroundColor.style.height="500px";
+      backgroundColor.style.width="500px";
+      backgroundColor.style.display="inLine";
+      backgroundColor.style.marginRight="-500px";
+      backgroundColor.style.cssFloat="left";
+      backgroundColor.style.display="inLine";
+      
+
+
+      //String(backgroundColor.style.position="relative");
 
       
       
@@ -70,7 +84,7 @@ export class ImageChangerComponent implements OnInit {
       
       //img.height=100;
       
-        
+      
   
 }
     
